@@ -4,93 +4,257 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Sufiyan Surve | Flutter Developer</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="./style.css" />
 </head>
 
 <body>
 
 <!-- NAV -->
-<nav>
-  <h2>Sufiyan Surve</h2>
-  <ul>
-    <li><a href="#about">About</a></li>
-    <li><a href="#projects">Projects</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
+<nav class="navbar">
+  <div class="navbar-container">
+    <div class="navbar-brand">
+      <h2>Sufiyan</h2>
+      <span class="accent">Surve</span>
+    </div>
+    <ul class="nav-menu hidden-mobile">
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+    <div class="hamburger hidden-desktop">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
 </nav>
 
 <!-- HERO -->
 <section class="hero">
-  <h1 id="typing"></h1>
-  <p>Flutter Developer | BLE | AI | Firebase</p>
+  <div class="hero-content">
+    <div class="hero-text">
+      <h1 id="typing"></h1>
+      <p class="hero-subtitle">Full-Stack Flutter Developer</p>
+      <p class="hero-description">
+        Passionate about building beautiful, scalable mobile applications with expertise in BLE, AI, and Firebase
+      </p>
+      
+      <div class="hero-btns">
+        <a href="./assets/sufiyan_surve_resume.pdf" target="_blank" class="btn btn-primary">
+          <i class="fas fa-download"></i> Download Resume
+        </a>
+        <a href="#contact" class="btn btn-secondary">
+          <i class="fas fa-envelope"></i> Get in Touch
+        </a>
+      </div>
 
-  <div class="btns">
-    <a href="./assets/sufiyan_surve_resume.pdf" target="_blank">Download Resume</a>
-    <a href="#contact">Contact</a>
+      <div class="social-links">
+        <a href="https://github.com/survesufiyan" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://linkedin.com/in/sufiyan-surve-563753199" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="mailto:sufiyansurve9@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+    <div class="hero-image hidden-mobile">
+      <div class="image-container">
+        <img src="./assets/profile-pic.jpeg" alt="Sufiyan Surve" class="profile-pic">
+      </div>
+    </div>
   </div>
 </section>
 
 <!-- ABOUT -->
-<section id="about" class="card hidden">
-  <h2>About Me</h2>
-  <p>
-    I am a Flutter Developer with hands-on experience building real-world applications,
-    especially in health-tech and IoT domains. I have worked on BLE-based apps,
-    real-time data systems, and AI-powered features.
-  </p>
+<section id="about" class="about-section hidden">
+  <div class="section-container">
+    <h2 class="section-title">About Me</h2>
+    <p class="about-text">
+      I'm a passionate Flutter Developer with hands-on experience building real-world applications, especially in health-tech and IoT domains. With a strong background in mobile development, I create intuitive, performant applications that solve real problems.
+    </p>
+    <div class="about-highlights">
+      <div class="highlight-item">
+        <i class="fas fa-mobile-alt"></i>
+        <h3>Mobile Development</h3>
+        <p>Expert in Flutter & Dart</p>
+      </div>
+      <div class="highlight-item">
+        <i class="fas fa-bluetooth"></i>
+        <h3>IoT Integration</h3>
+        <p>BLE & Sensor Integration</p>
+      </div>
+      <div class="highlight-item">
+        <i class="fas fa-brain"></i>
+        <h3>AI/ML</h3>
+        <p>AI-Powered Features</p>
+      </div>
+      <div class="highlight-item">
+        <i class="fas fa-database"></i>
+        <h3>Backend</h3>
+        <p>Firebase & Cloud Services</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="skills-section hidden">
+  <div class="section-container">
+    <h2 class="section-title">Skills & Technologies</h2>
+    
+    <div class="skills-grid">
+      <div class="skill-category">
+        <h3>Languages</h3>
+        <div class="skill-tags">
+          <span class="skill-tag">Dart</span>
+          <span class="skill-tag">Java</span>
+          <span class="skill-tag">Python</span>
+          <span class="skill-tag">Firebase</span>
+        </div>
+      </div>
+      
+      <div class="skill-category">
+        <h3>Frameworks</h3>
+        <div class="skill-tags">
+          <span class="skill-tag">Flutter</span>
+          <span class="skill-tag">GetX</span>
+          <span class="skill-tag">Provider</span>
+          <span class="skill-tag">Riverpod</span>
+        </div>
+      </div>
+      
+      <div class="skill-category">
+        <h3>Specializations</h3>
+        <div class="skill-tags">
+          <span class="skill-tag">BLE</span>
+          <span class="skill-tag">Real-time Data</span>
+          <span class="skill-tag">AI Integration</span>
+          <span class="skill-tag">IoT</span>
+        </div>
+      </div>
+      
+      <div class="skill-category">
+        <h3>Tools & Platforms</h3>
+        <div class="skill-tags">
+          <span class="skill-tag">Git</span>
+          <span class="skill-tag">Android Studio</span>
+          <span class="skill-tag">VS Code</span>
+          <span class="skill-tag">Figma</span>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 
 <!-- PROJECTS -->
-<section id="projects">
-  <h2>Projects</h2>
+<section id="projects" class="projects-section">
+  <div class="section-container">
+    <h2 class="section-title">Featured Projects</h2>
 
-  <div class="projects">
+    <div class="projects-grid">
 
-    <div class="project hidden">
-      <h3>Grip Strength Tracker</h3>
-      <p>BLE-based app for real-time grip strength monitoring with charts.</p>
-      <div class="links">
-        <a href="#">GitHub</a>
+      <div class="project-card hidden">
+        <div class="project-image">
+          <div class="project-placeholder" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"></div>
+        </div>
+        <div class="project-content">
+          <div class="project-tag">BLE • IoT</div>
+          <h3>Grip Strength Tracker</h3>
+          <p>BLE-based app for real-time grip strength monitoring with charts and analytics.</p>
+          <div class="project-links">
+            <a href="#" class="project-link"><i class="fab fa-github"></i> GitHub</a>
+          </div>
+        </div>
       </div>
-    </div>
 
-    <div class="project hidden">
-      <h3>Skin Sight AI</h3>
-      <p>AI-powered skin analysis app using Flutter + Supabase.</p>
-      <div class="links">
-        <a href="#">GitHub</a>
+      <div class="project-card hidden">
+        <div class="project-image">
+          <div class="project-placeholder" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);"></div>
+        </div>
+        <div class="project-content">
+          <div class="project-tag">AI • Supabase</div>
+          <h3>Skin Sight AI</h3>
+          <p>AI-powered skin analysis app using Flutter + Supabase with real-time insights.</p>
+          <div class="project-links">
+            <a href="#" class="project-link"><i class="fab fa-github"></i> GitHub</a>
+          </div>
+        </div>
       </div>
-    </div>
 
-    <div class="project hidden">
-      <h3>UV Index Tracker</h3>
-      <p>Live UV monitoring using BLE sensors.</p>
-      <div class="links">
-        <a href="https://play.google.com/store/apps/details?id=com.uviora.app">Live</a>
+      <div class="project-card hidden">
+        <div class="project-image">
+          <div class="project-placeholder" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);"></div>
+        </div>
+        <div class="project-content">
+          <div class="project-tag">BLE • Live</div>
+          <h3>UV Index Tracker</h3>
+          <p>Live UV monitoring app using BLE sensors with real-time data synchronization.</p>
+          <div class="project-links">
+            <a href="https://play.google.com/store/apps/details?id=com.uviora.app" class="project-link" target="_blank"><i class="fas fa-play"></i> Play Store</a>
+          </div>
+        </div>
       </div>
-    </div>
 
-    <div class="project hidden">
-      <h3>Attendance App</h3>
-      <p>Flutter + Firebase app with authentication and role management.</p>
-      <div class="links">
-        <a href="#">GitHub</a>
+      <div class="project-card hidden">
+        <div class="project-image">
+          <div class="project-placeholder" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);"></div>
+        </div>
+        <div class="project-content">
+          <div class="project-tag">Firebase • Auth</div>
+          <h3>Attendance App</h3>
+          <p>Flutter + Firebase app with secure authentication and advanced role management.</p>
+          <div class="project-links">
+            <a href="#" class="project-link"><i class="fab fa-github"></i> GitHub</a>
+          </div>
+        </div>
       </div>
-    </div>
 
+    </div>
   </div>
 </section>
 
 <!-- CONTACT -->
-<section id="contact" class="card hidden">
-  <h2>Contact</h2>
-  <p>Email: sufiyansurve9@gmail.com</p>
-  <p><a href="https://github.com/survesufiyan">GitHub</a></p>
-  <p><a href="https://linkedin.com/in/sufiyan-surve-563753199">LinkedIn</a></p>
+<section id="contact" class="contact-section hidden">
+  <div class="section-container">
+    <h2 class="section-title">Let's Connect</h2>
+    <p class="contact-subtitle">Have a project in mind or want to collaborate? Let's talk!</p>
+    
+    <div class="contact-content">
+      <div class="contact-info">
+        <div class="contact-item">
+          <i class="fas fa-envelope"></i>
+          <div>
+            <h3>Email</h3>
+            <a href="mailto:sufiyansurve9@gmail.com">sufiyansurve9@gmail.com</a>
+          </div>
+        </div>
+        
+        <div class="contact-item">
+          <i class="fab fa-github"></i>
+          <div>
+            <h3>GitHub</h3>
+            <a href="https://github.com/survesufiyan" target="_blank">@survesufiyan</a>
+          </div>
+        </div>
+        
+        <div class="contact-item">
+          <i class="fab fa-linkedin"></i>
+          <div>
+            <h3>LinkedIn</h3>
+            <a href="https://linkedin.com/in/sufiyan-surve-563753199" target="_blank">Sufiyan Surve</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 
-<footer>
-  <p>© 2026 Sufiyan Surve</p>
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="section-container">
+    <p>&copy; 2026 Sufiyan Surve. All rights reserved.</p>
+    <p>Designed & Built with <i class="fas fa-heart"></i> using Flutter & Web Technologies</p>
+  </div>
 </footer>
 
 <script src="./script.js"></script>
