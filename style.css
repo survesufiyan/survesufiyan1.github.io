@@ -1,33 +1,123 @@
-/* Fade-in animation */
-.hidden {
-  opacity: 0;
-  transform: translateY(40px);
-  transition: all 0.8s ease;
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
 
-.show {
-  opacity: 1;
-  transform: translateY(0);
+/* BODY */
+body {
+  background: linear-gradient(135deg, #141e30, #243b55);
+  color: #fff;
 }
 
-/* Project buttons */
-.project-btns {
+/* NAV */
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 50px;
+}
+
+nav ul {
+  display: flex;
+  gap: 25px;
+  list-style: none;
+}
+
+nav a {
+  text-decoration: none;
+  color: #ddd;
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 120px 20px;
+}
+
+.hero h1 {
+  font-size: 42px;
+}
+
+.hero p {
   margin-top: 10px;
+  color: #bbb;
 }
 
-.project-btns a {
+/* BUTTONS */
+.btns {
+  margin-top: 20px;
+}
+
+.btns a {
+  margin: 10px;
+  padding: 12px 25px;
+  background: #00c6ff;
+  color: #000;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.btns a:hover {
+  background: #0072ff;
+  color: white;
+}
+
+/* CARD */
+.card {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 25px;
+  background: rgba(255,255,255,0.1);
+  border-radius: 12px;
+}
+
+/* PROJECTS */
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+  gap: 20px;
+  padding: 40px;
+}
+
+.project {
+  background: rgba(255,255,255,0.1);
+  padding: 20px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.project:hover {
+  transform: translateY(-8px);
+}
+
+.links a {
   display: inline-block;
-  margin: 5px;
+  margin-top: 10px;
   padding: 8px 15px;
   background: #00c6ff;
   color: black;
   border-radius: 6px;
   text-decoration: none;
-  font-size: 14px;
-  transition: 0.3s;
 }
 
-.project-btns a:hover {
-  background: #0072ff;
-  color: white;
+/* ANIMATION */
+.hidden {
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.show {
+  opacity: 1;
+  transform: translateY(0);
+  transition: 0.7s;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #aaa;
 }

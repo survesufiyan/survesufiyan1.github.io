@@ -1,16 +1,15 @@
 // Typing effect
-const text = "Hi, I'm Sufiyan Surve - Flutter Developer";
+const text = "Hi, I'm Sufiyan Surve";
 let i = 0;
 
-function typing() {
+function type() {
   if (i < text.length) {
     document.getElementById("typing").innerHTML += text.charAt(i);
     i++;
-    setTimeout(typing, 50);
+    setTimeout(type, 60);
   }
 }
-
-typing();
+type();
 
 // Scroll animation
 const observer = new IntersectionObserver((entries) => {
@@ -21,5 +20,4 @@ const observer = new IntersectionObserver((entries) => {
   });
 });
 
-const hiddenElements = document.querySelectorAll(".hidden");
-hiddenElements.forEach((el) => observer.observe(el));
+document.querySelectorAll(".hidden").forEach((el) => observer.observe(el));
